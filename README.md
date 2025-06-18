@@ -1,4 +1,4 @@
-# hcaparecida
+# Hospital Central
 
 Automation to update censuses once a day and other useful applications for everyday life.
 
