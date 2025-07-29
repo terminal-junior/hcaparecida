@@ -114,4 +114,4 @@ edge_background = false
 
 ---
 
-Se tiver dúvidas ou quiser expandir esse sistema com mais funcionalidades, entre em contato com o desenvolvedor responsável, e-mail: josi.junior@hcaparecida.com.br.
+Se tiver dúvidas ou quiser expandir esse sistema com mais funcionalidades, entre em contato com o desenvolvedor responsável, e-mail: josi.junior@gmail.com.
