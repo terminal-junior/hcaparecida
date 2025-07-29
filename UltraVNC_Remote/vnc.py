@@ -6,7 +6,7 @@ from tkinter import simpledialog
 def conectar_vnc():
     # Configurações (ajuste conforme necessário)
     VNC_PATH = r"C:\Program Files\uvnc bvba\UltraVNC\vncviewer.exe"  # Caminho do UltraVNC
-    SENHA = "1423hc@#"  # Substitua pela senha real
+    SENHA = "password"  # Substitua pela senha real
     
     # Cria a janela para pedir o IP/Hostname
     root = tk.Tk()
