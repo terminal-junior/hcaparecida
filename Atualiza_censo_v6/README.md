@@ -48,11 +48,11 @@ username = user.name
 encrypted_password = password
 ```
 
-| Chave                | Explicação                                                                 |
+| Chave                | Explicação                                                                |
 |----------------------|---------------------------------------------------------------------------|
 | `site`               | URL do site onde será feito o login automático.                           |
 | `username`           | Nome de usuário usado no formulário do site.                              |
-| `encrypted_password` | Senha do usuário para o site.                               |
+| `encrypted_password` | Senha do usuário para o site.                                             |
 
 ---
 
@@ -66,6 +66,10 @@ run_fathos = true
 run_edge = false
 fathos_background = false
 edge_background = false
+max_tentativas = 3
+Group = off
+Group_1 = true
+Group_2 = false
 ```
 
 | Chave              | Explicação                                                                                 |
@@ -74,6 +78,10 @@ edge_background = false
 | `run_edge`         | Se for `true`, o script abrirá o site no Edge e fará login automático.                     |
 | `fathos_background`| Se for `true`, o Fathos será executado em segundo plano (sem abrir janela visível).        |
 | `edge_background`  | Se for `true`, o navegador Edge será executado em segundo plano (sem abrir janela visível).|
+| `max_tentativas`   | Número máximo de tentativas permitidas caso ocorra erros durante o processo.               |
+| `Group`            | Controla o agrupamento geral. Pode ser `on` ou `off`.                                      |
+| `Group_1`          | Ativa `true` ou desativa `false` o grupo 1                                                 |
+| `Group_2`          | Ativa `true` ou desativa `false` o grupo 2                                                 |
 
 > ⚠️ Importante: Executar em segundo plano pode exigir permissões especiais ou configurações adicionais, dependendo do sistema operacional.
 
@@ -95,6 +103,10 @@ run_fathos = true
 run_edge = false
 fathos_background = false
 edge_background = false
+max_tentativas = 3
+Group = off
+Group_1 = true
+Group_2 = false
 ```
 
 ---
