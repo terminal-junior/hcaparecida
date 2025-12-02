@@ -126,4 +126,4 @@ Group_2 = false
 
 ---
 
-Se tiver dúvidas ou quiser expandir esse sistema com mais funcionalidades, entre em contato com o desenvolvedor responsável, e-mail: josi.junior@gmail.com.
+Se tiver dúvidas ou quiser expandir esse sistema com mais funcionalidades.
