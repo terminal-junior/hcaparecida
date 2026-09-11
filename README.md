@@ -258,7 +258,7 @@ O projeto possui forte dependência de ambiente **Windows**, especialmente nos m
 * aplicações Windows;
 * Fathos.
 
-A configuração documentada do `Atualiza_censo_v6`, por exemplo, utiliza um executável do Fathos localizado em `C:\AGFA_Exe_22\Fathos.exe` e configura o acesso a um site interno através do Edge.
+A configuração documentada do `Atualiza_censo_v6`, por exemplo, utiliza um executável do Fathos localizado em `C:\teste\Fathos.exe` e configura o acesso a um site interno através do Edge.
 
 > **Compatibilidade:** os componentes não devem ser considerados portáveis para Linux/macOS sem adaptações.
 
@@ -321,7 +321,7 @@ Exemplo conceitual:
 
 ```ini
 [Fathos]
-executable = C:\AGFA_Exe_22\Fathos.exe
+executable = C:\teste\Fathos.exe
 params = agfaprod, %profile%
 username = user.name
 encrypted_password = password
