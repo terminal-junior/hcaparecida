@@ -146,8 +146,8 @@ while tentativa < MAX_TENTATIVAS:
                     send_keys("{ENTER}")
                 #logging.info("Login feito com sucesso!")
                 time.sleep(1)
-                app = Application(backend="uia").connect(title_re="Fathos - SOCIEDADE BENEFICENTE SANTA TEREZINHA.*", timeout=1)
-                main_window = app.window(title_re="Fathos - SOCIEDADE BENEFICENTE SANTA TEREZINHA.*")
+                app = Application(backend="uia").connect(title_re="teste.*", timeout=1)
+                main_window = app.window(title_re="teste.*")
                 main_window.wait("enabled visible ready", timeout=1)
                 logging.info("Login feito com sucesso!")
                 logging.info("Fathos conectado com sucesso.")
@@ -166,7 +166,7 @@ while tentativa < MAX_TENTATIVAS:
                 time.sleep(4)
                 logging.info("Relatório do Censo gerado com sucesso.")
 
-                janela = app.window(title_re="Fathos - SOCIEDADE BENEFICENTE SANTA TEREZINHA.*")
+                janela = app.window(title_re="teste.*")
                 botoes = janela.descendants(control_type="Button")
                 botoes[0].invoke()
 
