@@ -59,7 +59,7 @@ while tentativa < MAX_TENTATIVAS:
 
         # === ABRE O FATHOS ===
         try:
-            subprocess.Popen([r"C:\\AGFA_Exe_22\\Fathos.exe", "agfaprod", "%profile%"])
+            subprocess.Popen([r"C:\\teste\\Fathos.exe", "agfaprod", "%profile%"])
             logging.info("Fathos inicializado.")
             time.sleep(5)
 
@@ -67,8 +67,8 @@ while tentativa < MAX_TENTATIVAS:
             logging.info("Login feito com sucesso!")
             time.sleep(1)
                         
-            app = Application(backend="uia").connect(title_re="Fathos - SOCIEDADE BENEFICENTE SANTA TEREZINHA.*", timeout=1)
-            main_window = app.window(title_re="Fathos - SOCIEDADE BENEFICENTE SANTA TEREZINHA.*")
+            app = Application(backend="uia").connect(title_re="testeA.*", timeout=1)
+            main_window = app.window(title_re="teste.*")
             main_window.wait("enabled visible ready", timeout=1)
 
             relatorios_menu = main_window.child_window(title="Relatórios", control_type="MenuItem")
@@ -83,7 +83,7 @@ while tentativa < MAX_TENTATIVAS:
             time.sleep(4)
             logging.info("Relatório do Censo gerado com sucesso.")
         
-            janela = app.window(title_re="Fathos - SOCIEDADE BENEFICENTE SANTA TEREZINHA.*")
+            janela = app.window(title_re="teste.*")
             botoes = janela.descendants(control_type="Button")
             botoes[0].invoke()
 
@@ -96,10 +96,10 @@ while tentativa < MAX_TENTATIVAS:
 
             send_keys('{TAB}{DOWN 11}{TAB}')
             logging.info("Tipo: 'XLS DATA File' selecionado")
-            caminho_arquivo = r"\\srv-02\inetpub\wwwroot\mapa\censo.xls"
+            caminho_arquivo = r"\\teste\censo.xls"
             send_keys(caminho_arquivo)
             send_keys('{ENTER 2}')
-            logging.info(r"Censo salvo em: \\srv-02\inetpub\wwwroot\mapa\censo.xls")
+            logging.info(r"Censo salvo em: \\teste\censo.xls")
             time.sleep(4)
 
         except Exception as e:
